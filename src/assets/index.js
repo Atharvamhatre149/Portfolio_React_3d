@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
+import c from "./tech/c++.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
@@ -22,6 +23,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import bootstrap from "./tech/bootstrap.png";
 import nextjs from "./tech/nextjs.png";
+import python from "./tech/python.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -30,7 +32,12 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
+import sweep from "./sweep_chat.png";
+import promptnation from "./promptnation.png";
+import netflix from "./netflix.png";
 import tripguide from "./tripguide.png";
+import linkweb from "./link_web.png";  
+import resume from "./Atharva_Mhatre_Resume.pdf";
 
 export {
   logo,
@@ -62,5 +69,12 @@ export {
   jobit,
   tripguide,
   bootstrap,
-  nextjs
+  nextjs,
+  c,
+  python,
+  sweep,
+  promptnation,
+  netflix,
+  linkweb,
+  resume,
 };

@@ -15,11 +15,15 @@ import {
     git,
     bootstrap,
     nextjs,
-   
+    c,
+    python,
     carrent,
     jobit,
     tripguide,
     threejs,
+    sweep,
+    netflix,
+    promptnation
   } from "../assets";
   
   export const navLinks = [
@@ -43,15 +47,15 @@ import {
       icon: web,
     },
     {
-      title: "React Developer",
+      title: "Frontend Developer",
       icon: mobile,
     },
     {
-      title: "Frontend Developer",
+      title: "Competitive Coder",
       icon: creator,
     },
     {
-      title: "Backend Developer",
+      title: "Problem Solver",
       icon: backend,
     },
   ];
@@ -101,6 +105,14 @@ import {
     {
       name: "Bootstrap",
       icon: bootstrap,
+    },
+    {
+      name: "C",
+      icon: c,
+    },
+    {
+      name: "Python",
+      icon: python,
     }
    
   ];
@@ -189,9 +201,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Sweep chat",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Immersive web-based chat app built with the MERN stack, seamlessly integrated multiavatar.com API for fetching avatars. Used Socket.io for real-time instant messaging, reinforced by secure login/signup and form validation.",
       tags: [
         {
           name: "react",
@@ -202,54 +214,65 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "express",
+          color: "orange-text-gradient",
         },
+        {
+          name: "node",
+          color:"pink-text-gradient"
+        }
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: sweep,
+      source_code_link: "https://github.com/Atharvamhatre149/Sweep-chat-app/",
+      // website_link:null
     },
     {
-      name: "Job IT",
+      name: "PromptNation",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Immersive and interactive web application built with NextJS for sharing and discovering prompts to engage AI models. Users can create and post prompts, explore others' prompts, and copy them for collaboration.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "next",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "restapi",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: promptnation,
+      source_code_link: "https://github.com/Atharvamhatre149/promptNation",
+      website_link:"https://prompt-nation.vercel.app/"
     },
     {
-      name: "Trip Guide",
+      name: "Netflix Clone",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "visually stunning and interactive user interface created. By implementing CSS media queries made the clone fully responsive, adapting flawlessly to various screen sizes. Enhanced interactivity with help of javascript.",
       tags: [
         {
-          name: "nextjs",
+          name: "html",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "css",
           color: "green-text-gradient",
         },
         {
-          name: "css",
-          color: "pink-text-gradient",
+          name: "javascript",
+          color: "orange-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: netflix,
+      source_code_link: "https://github.com/Atharvamhatre149/Netflix-Clone/",
+      website_link:"https://netflix-atharva.netlify.app/"
     },
   ];
   

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../style";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { resume } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -36,7 +37,7 @@ const Navbar = () => {
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
-            // window.scrollTo(0, 0);
+            window.scrollTo(0, 0);
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
@@ -47,18 +48,24 @@ const Navbar = () => {
             </span>
           </p>
         </Link>
-        <ul className="list-none hidden  sm:flex flex-row gap-10">
+        <ul className="list-none hidden  justify-center sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px]  font-medium cursor-pointer mt-1`}
               onClick={() => setActive(link.title)}
             >
               <a className="font-bold" href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <button 
+              type="submit"
+              className="bg-[#9333ea] hover:bg-[#6b21a8] transition  duration-300 ease-in-out py-2 px-4 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+          >
+             <a href={resume} class="btn btn2" download>Resume</a>
+          </button>
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center ">
           <img
@@ -86,6 +93,12 @@ const Navbar = () => {
                 <a className="font-bold" href={`#${link.id}`}>{link.title}</a>
               </li>
             ))}
+            <button 
+              type="submit"
+              className="bg-[#9333ea] hover:bg-[#6b21a8] transition  duration-300 ease-in-out py-2 px-4 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+          >
+             <a href={resume} class="btn btn2" download>Resume</a>
+          </button>
           </ul>
           </div>
         </div>
